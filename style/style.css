@@ -141,7 +141,7 @@ footer{
 }
 
 footer img{
-    width: 40%;
+    width: 20%;
 }
 
 footer span{
@@ -209,13 +209,10 @@ footer span{
         margin-bottom: 20%;
     }
 
-    /* footer img{
-        width: 40%;
+    footer span{
+        font-size: 50%;
     }
 
-    footer span{
-        font-size:  50%;
-    } */
 }
 
 @media only screen and (max-width: 980px){
