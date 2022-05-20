@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
+h1, p, h2, h3, a, span{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-weight: 300;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC107;
+}
+
+header img{
+    align-self: center;
+    width: 324px;
+    height: 84px;
+}
+
+header .container{
+    background-color:  #FFA000; 
+}
+
+.container nav{
+    display: flex;
+    justify-content: center;
+}
+
+.center-li{
+    margin: 0 58px 0 58px;
+}
+.container nav li{
+    list-style: none;
+    margin: 12px 12px;
+}
+
+.container nav li a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #FDFDFD;
+}
+
+/* MAIN */
+
+.main-container{
+    display: flex;
+}
+
+main{
+    width: 50%;
+}
+
+main h1{
+    color: #FFA000;
+}
+
+main .container img{
+    display: block;
+    margin-bottom: 32px;
+}
+
+main .container span{
+    border: 1px #176902 solid;
+    padding: 7px;
+    border-radius: 47px;
+    color: #176902;
+    margin-right: 40px;
+}
+
+.ingredientes{
+    margin-top: 65px;
+    font-size: 20px;
+}
+
+.video{
+    margin-top: 80px ;
+    margin-bottom: 70px;
+}
+
+.modo{
+    width: 592px;
+    height: 576px;
+}
+
+/* ASIDE */
+aside{
+    width: 45%;
+    margin-top: 172px;
+    /* padding: 5%; */
+}
+
+aside h2{
+    color: #FFA000;
+    text-align: center;
+}
+
+aside .receitas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 345px;
+    height: 411px;
+    box-shadow: 10px 10px 8px #888888;
+    margin-bottom: 50px;
+}
+
+aside a{
+    text-decoration: none;
+    color: black;
+}
+
+aside .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .container .receitas span{
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #FFC107;
+    color: white;
+    font-weight: 700;
+}
