@@ -140,6 +140,14 @@ footer{
     font-weight: 700;
 }
 
+footer img{
+    width: 40%;
+}
+
+footer span{
+    font-size: 80%;
+}
+
 @media only screen and (max-width: 1200px){
     .main-container{
         flex-direction: column;
@@ -180,6 +188,10 @@ footer{
         margin-bottom: 10%;
     }
 
+    .video iframe{
+        width: 80%;
+    }
+
     .modo{
         width: 90%;
         height: 100%;
@@ -194,6 +206,79 @@ footer{
     aside .receitas{
         align-items: flex-start;
         width: 100%;
+        margin-bottom: 20%;
+    }
+
+    /* footer img{
+        width: 40%;
+    }
+
+    footer span{
+        font-size:  50%;
+    } */
+}
+
+@media only screen and (max-width: 980px){
+
+    .container nav li a{
+        font-size: 70%;
+    }
+
+    main{
+        margin-bottom: 0px;
+    }
+
+    .video{
+        width: 90%;
+        height: 90%;
+        margin-bottom: 10%;
+    }
+
+    aside .receitas{
+        align-items: flex-start;
+        width: 40%;
+        margin-bottom: 25%;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    .container nav li a{
+        font-size: 50%;
+    }
+
+    main .container img{
+        width: 100%;
+    }
+
+    .ingredientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: justify;
+        font-size: 100%;
+    }
+
+    .video iframe{
+        width: 90%;
+    }
+
+    .modo{
+        width: 90%;
+        height: 100%;
+        text-align: justify;
+    }
+
+    aside{
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    aside .receitas{
+        align-items: flex-start;
+        width: 50%;
         margin-bottom: 15%;
     }
 }
