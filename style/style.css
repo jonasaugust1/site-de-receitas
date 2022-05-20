@@ -48,6 +48,7 @@ header .container{
 
 .main-container{
     display: flex;
+    justify-content: space-evenly;
 }
 
 main{
@@ -60,7 +61,8 @@ main h1{
 
 main .container img{
     display: block;
-    margin-bottom: 32px;
+    width: 43vw;
+    margin-bottom: 4.8vh;
 }
 
 main .container span{
@@ -73,23 +75,28 @@ main .container span{
 
 .ingredientes{
     margin-top: 65px;
-    font-size: 20px;
+    font-size: 95%;
 }
 
 .video{
+    width: 43vw;
+    height: 48vh;
     margin-top: 80px ;
-    margin-bottom: 70px;
+    margin-bottom: 18%;
 }
 
 .modo{
-    width: 592px;
-    height: 576px;
+    width: 43vw;
+    height: 87vh;
 }
 
 /* ASIDE */
 aside{
-    width: 45%;
-    margin-top: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin-top: 12vw;
     /* padding: 5%; */
 }
 
@@ -102,26 +109,26 @@ aside .receitas{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 345px;
-    height: 411px;
-    box-shadow: 10px 10px 8px #888888;
-    margin-bottom: 50px;
+    justify-items: center;
+    width: 23.5vw;
+    height: 22vh;
+    margin-bottom: 80%;
+    box-shadow: 0 100px 25% #000000;
+}
+
+.receitas img{
+    width: 100%;
 }
 
 aside a{
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
-aside .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-aside .container .receitas span{
+aside .receitas span{
     font-weight: 600;
-    margin-top: 12px;
 }
 
 /* FOOTER */
@@ -131,4 +138,62 @@ footer{
     background-color: #FFC107;
     color: white;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px){
+    .main-container{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    main .container img{
+        width: 100%;
+    }
+
+    .ingredientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: justify;
+        font-size: 100%;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+
+    .modo{
+        width: 90%;
+        height: 100%;
+        text-align: justify;
+    }
+
+    aside{
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    aside .receitas{
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 15%;
+    }
 }
