@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
+h1, span, button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    color: #FFA000;
+}
+
+span{
+    font-weight: 600;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC107;
+}
+
+header img{
+    align-self: center;
+    width: 324px;
+    height: 84px;
+}
+
+header .container{
+    background-color:  #FFA000; 
+}
+
+.container nav{
+    display: flex;
+    justify-content: center;
+}
+
+.center-li{
+    margin: 0 58px 0 58px;
+}
+.container nav li{
+    list-style: none;
+    margin: 12px 12px;
+}
+
+.container nav li a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #FDFDFD;
+}
+
+/* MAIN */
+
+main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.h1{
+    width: 100%;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 25px;
+}
+
+.cards img{
+    width: 100%;
+}
+
+.cards span{
+    margin: 10px;
+}
+
+.cards .button{
+    text-decoration: none;
+    background-color: #176902;
+    width: 25%;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+    color: #FDFDFD;
+}
+
+.cards button{
+    background-color: #176902;
+    color: #FDFDFD;
+    width: 30%;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #FFC107;
+    color: white;
+    font-weight: 700;
+}
+
+footer img{
+    width: 20%;
+}
+
+footer span{
+    font-size: 80%;
+}
+
+@media only screen and (max-width: 480px){
+    .container nav li a{
+       font-size: 80%;
+    }
+
+    .cards{
+        width: 35%;
+    }
+
+    .cards span{
+        width: 100%;
+        font-size: 62%;
+        text-align: center;
+    }
+
+    .cards .button{
+        width: 100%;
+    }
+
+    .cards button{
+        width: 100%;
+    }
+
+}
