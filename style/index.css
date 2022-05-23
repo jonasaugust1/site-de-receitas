@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+h1, p, h2, h3, a, span{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-weight: 500;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC107;
+}
+
+header img{
+    align-self: center;
+    width: 324px;
+    height: 84px;
+}
+
+header .container{
+    background-color:  #FFA000; 
+}
+
+.container nav{
+    display: flex;
+    justify-content: center;
+}
+
+.center-li{
+    margin: 0 58px 0 58px;
+}
+.container nav li{
+    list-style: none;
+    margin: 12px 12px;
+}
+
+.container nav li a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #FDFDFD;
+}
+
+/* MAIN */
+
+.top{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../img/image 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 18%;
+    color: #FDFDFD;
+}
+
+.main-container{
+    background-color: #FDFDFD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.h1{
+    width: 100%;
+    text-align: center;
+    color: #FFA000;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 25px;
+}
+
+.cards img{
+    width: 100%;
+}
+
+.cards span{
+    margin: 10px;
+}
+
+.cards a{
+    text-decoration: none;
+    background-color: #176902;
+    width: 25%;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+    color: #FDFDFD;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/image 2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 18%;
+    color: #FDFDFD;
+}
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #FFC107;
+    color: white;
+    font-weight: 700;
+}
+
+footer img{
+    width: 20%;
+}
+
+footer span{
+    font-size: 80%;
+}
+
+@media only screen and (max-width: 480px){
+    .container nav li a{
+        font-size: 80%;
+     }
+
+    .h1{
+        font-size: 100%;
+    }
+
+    .cards{
+        width: 45%;
+    }
+
+    .cards span{
+        width: 100%;
+        font-size: 100%;
+        text-align: center;
+    }
+
+    .cards a{
+        width: 100%;
+    }
+
+    .bottom{
+        padding: 5%;
+    }
+
+
+    /* .bottom h2{
+        font-size: 90%;
+    }
+    
+    .bottom p{
+        font-size: 80%;
+        
+    } */
+}

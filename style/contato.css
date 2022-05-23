@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+h1, input, textarea{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-weight: 500;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC107;
+}
+
+header img{
+    align-self: center;
+    width: 324px;
+    height: 84px;
+}
+
+header .container{
+    background-color:  #FFA000; 
+}
+
+.container nav{
+    display: flex;
+    justify-content: center;
+}
+
+.center-li{
+    margin: 0 58px 0 58px;
+}
+.container nav li{
+    list-style: none;
+    margin: 12px 12px;
+}
+
+.container nav li a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #FDFDFD;
+}
+
+/* MAIN */
+.top{
+    display: flex;
+    background-image: url("../img/image\ contato.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12%;
+    color: #FDFDFD;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    color: #FFC107;
+    margin: 50px;
+}
+
+.formulario img{
+    width: 100%;
+}
+
+fieldset{
+    width: 50%;
+    border: 1px solid #FFC107;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+fieldset form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+form input, textarea{
+    padding: 20px;
+    border: 1px solid #FFC107;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+form button{
+    width: 15%;
+    background-color: #FFC107;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    color: #FDFDFD;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #FFC107;
+    color: white;
+    font-weight: 700;
+}
+
+footer img{
+    width: 20%;
+}
+
+footer span{
+    font-size: 80%;
+}
+
+@media only screen and (max-width: 480px){
+    .container nav li a{
+        font-size: 80%;
+     }
+
+     .top{
+        font-size: 50%;
+        padding: 10%;
+    }
+
+     .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #FFC107;
+        margin: 50px;
+    }
+
+    .formulario img{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    form button{
+        width: 30%;
+    }
+}
